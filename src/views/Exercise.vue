@@ -21,6 +21,12 @@
           <li>
             Oops ! I forget the milk, add this ingredient when you click on a button.
           </li>
+          <li>
+            Blablabla do this 
+          </li>
+          <li>
+            Blablabla do that 
+          </li>
         </ol>
       </div>
     </div>
@@ -28,6 +34,7 @@
 
     <div class='exerciseResultPart'>
       <!-- TODO -->
+<<<<<<< HEAD
       <h1><center><strong>{{recipe.title}}</strong></center></h1>
       <ul>
         <li v-for="element in recipe.ingredients" v-bind:key="element.ingredients">
@@ -35,6 +42,9 @@
         </li>
       </ul>
       <button v-on:click="addMilk()">Add Milk</button>
+=======
+
+>>>>>>> 1f2290054298cfd0e537416e3127d2c4946f9a94
     </div>
   </div>
 </template>
