@@ -28,6 +28,13 @@
 
     <div class='exerciseResultPart'>
       <!-- TODO -->
+      <h1><center><strong>{{recipe.title}}</strong></center></h1>
+      <ul>
+        <li v-for="element in recipe.ingredients" v-bind:key="element.ingredients">
+          {{element}}
+        </li>
+      </ul>
+      <button v-on:click="addMilk()">Add Milk</button>
     </div>
   </div>
 </template>
@@ -39,10 +46,16 @@
       return{
         recipe : {
           title: "Crêpes",
-          ingredients: [ "eggs", "flour", "sugar"]
+          ingredients: [ "eggs", "flour", "sugar"],
+          complexity: 10
         }
       }
-    }
+    },
+      methods: {
+        addMilk(){
+          this.recipe.ingredients.push("milk");
+        } 
+      }
   }
 </script>
 
